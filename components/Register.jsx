@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import {Input, Button} from "@nextui-org/react";
 import {useRouter} from 'next/navigation';
+import Link from 'next/link'
 
 export default function Register() {
     const [phone, setPhone] = useState("")
@@ -53,6 +54,8 @@ export default function Register() {
                         labelPlacement='outside'
                         type='password'
                         placeholder='Enter your password'/>
+                    <p className='text-sm text-right'>Already have an account,{" "}<Link href={'/login'} className='text-sm text-right underline'>Login now</Link>
+                    </p>
                     <Button type='submit' className='w-full bg-black text-white'>Register now</Button>
                 </form>
             </div>

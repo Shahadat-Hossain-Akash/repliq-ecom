@@ -1,7 +1,8 @@
 'use client'
 import React, {useState} from 'react'
 import {Input, Button} from "@nextui-org/react";
-import { useRouter } from 'next/navigation';
+import {useRouter} from 'next/navigation';
+import Link from 'next/link'
 
 export default function Register() {
     const [phone, setPhone] = useState("")
@@ -11,22 +12,20 @@ export default function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!phone && !password){
+        if (!phone && !password) {
             setError("All fields are required")
             return
         }
         if (!phone) {
             setError("Phone number is required")
             return
-        }
-        else if(!password) {
+        } else if (!password) {
             setError("Password is required")
             return
         }
         router.replace('/')
         setError("");
     }
-    console.log(phone)
     return (
         <div className='text-black w-full h-full justify-center flex items-center'>
             <div
@@ -50,6 +49,8 @@ export default function Register() {
                         labelPlacement='outside'
                         type='password'
                         placeholder='Enter your password'/>
+                    <p className='text-sm text-right'>Don&apos;t have an account,{" "}<Link href={'/register'} className='text-sm text-right underline'>Sign now</Link>
+                    </p>
                     <Button type='submit' className='w-full bg-black text-white'>Login</Button>
                 </form>
             </div>
