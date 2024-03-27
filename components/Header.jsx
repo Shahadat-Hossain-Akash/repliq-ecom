@@ -19,7 +19,7 @@ export default function Header() {
                         <Link href={'/register'}>
                             <Button color='primary' size='sm'>Register</Button>
                         </Link>
-                        <Link href={'/register'}>
+                        <Link href={'/login'}>
                             <Button variant='ghost' size='sm' color='secondary'>Login</Button>
                         </Link>
                     </div>

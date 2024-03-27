@@ -1,7 +1,10 @@
+import Register from '@/components/Register'
 import React from 'react'
 
-export default function Register() {
+export default function RegisterPage() {
   return (
-    <div>Register</div>
+    <div className='w-full h-screen'>
+      <Register/>
+    </div>
   )
 }
