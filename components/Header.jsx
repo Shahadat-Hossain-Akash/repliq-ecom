@@ -10,7 +10,7 @@ export default function Header() {
             <div className='text-3xl font-bold w-full flex'><SiConfluence /></div>
             <div className='w-full flex'>
                 <div className='w-full flex justify-end gap-4 font-medium items-center'>
-                    <div className='size-9 items-center flex justify-center rounded-full'><PiShoppingCartSimpleThin size={32} /></div>
+                    <div className='size-9 items-center flex justify-center rounded-full'><PiShoppingCartSimpleThin size={28} /></div>
                     {/*  <li className='size-9 items-center flex justify-center rounded-full'><PiShie
  * ldThin size={32}/></li> 
  */
