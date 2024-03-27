@@ -14,7 +14,7 @@ export default function HomePage() {
                     alt='Image'/>
                 <div
                     className='w-full md:w-1/3 flex flex-col p-10 justify-center z-10 gap-2 md:gap-4'>
-                    <span className=' text-red-600 text-md md:text-2xl'>Find your next favorite item and elevate your everyday life</span>
+                    <span className=' text-zinc-600 text-md md:text-2xl'>Find your next favorite item and elevate your everyday life</span>
                     <span className='text-2xl md:text-5xl font-semibold'>Discover Your Next Favorite Find</span>
                     <button
                         className='w-fit text-ld md:text-xl text-white font-light bg-black px-4 py-2 rounded-md'>Take a tour</button>

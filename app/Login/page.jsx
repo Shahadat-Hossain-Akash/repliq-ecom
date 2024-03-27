@@ -1,7 +1,10 @@
+import Login from '@/components/Login'
 import React from 'react'
 
-export default function Login() {
+export default function LoginPage() {
   return (
-    <div>Login</div>
+    <div className='w-full h-screen'>
+      <Login/>
+    </div>
   )
 }
