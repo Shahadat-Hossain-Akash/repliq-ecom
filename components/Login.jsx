@@ -4,7 +4,7 @@ import {Input, Button} from "@nextui-org/react";
 import {useRouter} from 'next/navigation';
 import Link from 'next/link'
 
-export default function Register() {
+export default function Login() {
     const [phone, setPhone] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")

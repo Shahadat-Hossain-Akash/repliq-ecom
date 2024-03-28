@@ -48,7 +48,7 @@ export default function Checkout() {
                     </form>
                 </div>
             </div>
-            <div className='w-full md:w-1/3 min-h-screen p-2 flex flex-col gap-2'>
+            <div className='w-full md:w-1/3 h-full p-2 flex flex-col gap-2 mb-4'>
                 <span className='text-4xl'>Payment Receipt</span>
                 <div className='w-full flex justify-between flex-col gap-2'>
                     <div className='w-full flex justify-between'>

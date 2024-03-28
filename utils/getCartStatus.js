@@ -9,5 +9,5 @@ export const GetTotalItems = () => {
 
 export const GetTotalAmount = () => {
     const {cart} = useContext(CartContext)
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    return cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
   };
