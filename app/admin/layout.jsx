@@ -8,6 +8,7 @@ import Link from 'next/link'
 
 export default function AdminLayout({children}) {
     const [isOpen, setIsOpen] = useState(false)
+    const list = ['orders', 'customers',]
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     }
@@ -29,16 +30,16 @@ export default function AdminLayout({children}) {
                     </button>
                 </div>
             </div>
-            <div className="mx-auto flex justify-end items-center md:hidden relative bg-slate-400 w-full">
+            <div className="mx-auto flex justify-end items-center md:hidden relative w-full ">
                     {
                         isOpen && (
                             <div
-                                className="absolute right-0 top-0 bg-black hover:bg-zinc-100 rounded-lg mt-2 z-50">
-                                <ul className="py-2">
+                                className="absolute right-0 top-0 bg-black rounded-lg mt-2 z-50">
+                                <ul className="p-2">
                                     {
                                         list.map((item) => (
                                             <Link key={item} href={`/admin/${item}`} >
-                                                <li className="px-4 w-48 flex flex-row gap-2 py-2 cursor-pointer text-white text-sm mb-2 ">
+                                                <li className="px-4 w-48 flex flex-row gap-2 py-2 cursor-pointer text-white hover:bg-zinc-500 rounded-md text-sm mb-2 ">
                                                     {item}
                                                 </li>
                                             </Link>
