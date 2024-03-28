@@ -21,11 +21,9 @@ export default function Header() {
                             <PiShoppingCartSimpleThin size={28}/>
                         </div>
                     </Link>
-                    {/*  <li className='size-9 items-center flex justify-center rounded-full'><PiShie
- *  ldThin size={32}/></li>
-
- */
-                    }
+                    <Link href={'/admin'}>
+                        <li className='size-9 items-center flex justify-center rounded-full'><PiShieldThin size={28}/></li>
+                    </Link>
                     <div className='gap-4 flex text-white'>
                         <Link href={'/register'}>
                             <Button color='primary' size='sm'>Register</Button>

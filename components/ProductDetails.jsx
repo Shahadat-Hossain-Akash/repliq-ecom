@@ -1,9 +1,8 @@
 'use client'
 import React, { useContext } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import {Button} from "@nextui-org/react";
-import CartContext from '@/context/CartContext';
+import {Button} from "@nextui-org/react"
+import CartContext from '@/context/CartContext'
 
 export default function ProductDetails({data}) {
     const { addItemToCart } = useContext(CartContext)
