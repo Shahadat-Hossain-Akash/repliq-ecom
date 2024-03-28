@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import {PiShoppingCartSimpleThin, PiShieldThin, PiSignInThin} from "react-icons/pi";
+import {PiShoppingCartSimpleThin, PiShieldThin} from "react-icons/pi";
 import {SiConfluence} from "react-icons/si";
 import Link from 'next/link'
 import {Button} from "@nextui-org/react";
@@ -28,7 +28,7 @@ export default function Header() {
                         <Link href={'/register'}>
                             <Button color='primary' size='sm'>Register</Button>
                         </Link>
-                        <Link href={'/login'}>
+                        <Link href={'/signin'}>
                             <Button variant='ghost' size='sm' color='secondary'>Login</Button>
                         </Link>
                     </div>

@@ -28,7 +28,7 @@ export default function Register() {
                 return setError("Invalid phone number")
             }
         }
-        router.replace('/login')
+        router.replace('/signin')
         setError("")
     }
     return (
@@ -54,7 +54,7 @@ export default function Register() {
                         labelPlacement='outside'
                         type='password'
                         placeholder='Enter your password'/>
-                    <p className='text-sm text-right'>Already have an account,{" "}<Link href={'/login'} className='text-sm text-right underline'>Login now</Link>
+                    <p className='text-sm text-right'>Already have an account,{" "}<Link href={'/signin'} className='text-sm text-right underline'>Login now</Link>
                     </p>
                     <Button type='submit' className='w-full bg-black text-white'>Register now</Button>
                 </form>
