@@ -20,16 +20,16 @@ export default function Register() {
             return
         }
         if (phone) {
-            const number = phone.replace(/\D/g, '');
+            const number = phone.replace(/\D/g, '')
             if (number.length == 11) {
-                setPhone(number);
-                setError("");
+                setPhone(number)
+                setError("")
             } else {
                 return setError("Invalid phone number")
             }
         }
         router.replace('/login')
-        setError("");
+        setError("")
     }
     return (
         <div className='text-black w-full h-full justify-center flex items-center'>

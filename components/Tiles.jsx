@@ -5,7 +5,7 @@ import Image from 'next/image'
 import CartContext from '@/context/CartContext';
 
 export default function Tiles({data}) {
-    const {addItemToCart, removeItemFromCart, clearCart} = useContext(CartContext)
+    const {addItemToCart, removeItemFromCart} = useContext(CartContext)
     return (
         <div className='w-full h-full gap-2 flex flex-col'>
         <Card className=' shadow-none flex-col  md:flex-row '>

@@ -1,17 +1,9 @@
 'use client'
 import React from 'react'
-import {
-    Button,
-    Divider,
-    Input,
-    Dropdown,
-    DropdownTrigger,
-    DropdownMenu,
-    DropdownItem
-} from "@nextui-org/react"
+import {Button, Divider, Input} from "@nextui-org/react"
 import {FaGooglePay} from "react-icons/fa"
 import {RiVisaLine} from "react-icons/ri";
-import { GetTotalAmount, GetTotalItems } from '@/utils/getCartStatus';
+import {GetTotalAmount, GetTotalItems} from '@/utils/getCartStatus';
 
 export default function Checkout() {
     return (
@@ -56,8 +48,7 @@ export default function Checkout() {
                     </form>
                 </div>
             </div>
-            <div
-                className='w-full md:w-1/3 min-h-screen p-2 flex flex-col gap-2'>
+            <div className='w-full md:w-1/3 min-h-screen p-2 flex flex-col gap-2'>
                 <span className='text-4xl'>Payment Receipt</span>
                 <div className='w-full flex justify-between flex-col gap-2'>
                     <div className='w-full flex justify-between'>
