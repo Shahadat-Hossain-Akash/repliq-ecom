@@ -1,9 +1,12 @@
-import React from 'react'
+'use client'
+import React, { useContext } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {Button} from "@nextui-org/react";
+import CartContext from '@/context/CartContext';
 
 export default function ProductDetails({data}) {
+    const { addItemToCart } = useContext(CartContext)
     return (
         <div
             className='w-full min-h-screen flex flex-col md:flex-row gap-2 items-center'>
@@ -22,7 +25,7 @@ export default function ProductDetails({data}) {
                 <span className='p-3 rounded-2xl text-zinc-500 bg-zinc-200 text-sm'>{data.category}</span>
                 <span className='text-semibold text-5xl'>${data.price}</span>
                 <span>{data.description}</span>
-                <Button color='primary' className='text-white' size='lg'>Add to cart</Button>
+                <Button onClick={()=> addItemToCart(data)} color='primary' className='text-white' size='lg'>Add to cart</Button>
             </div>
         </div>
     );
