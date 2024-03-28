@@ -11,7 +11,6 @@ export default function AdminLayout({children}) {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     }
-    const list = ['orders', 'customers', 'products']
   return (
     <div className='min-h-screen flex w-full flex-col gap-4 mb-4'>
         <Header/>

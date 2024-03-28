@@ -160,75 +160,179 @@ export const activities = [
 ]
 
 export const orders = [
-  {
-    "id": 1,
-    "phone": "123-456-7890",
-    "name": "John Doe",
-    "bill": 125.75,
-    "date": "2024-03-25"
-  },
-  {
-    "id": 2,
-    "phone": "234-567-8901",
-    "name": "Jane Smith",
-    "bill": 78.99,
-    "date": "2024-03-24"
-  },
-  {
-    "id": 3,
-    "phone": "345-678-9012",
-    "name": "Alice Johnson",
-    "bill": 201.45,
-    "date": "2024-03-23"
-  },
-  {
-    "id": 4,
-    "phone": "456-789-0123",
-    "name": "Bob Brown",
-    "bill": 154.32,
-    "date": "2024-03-22"
-  },
-  {
-    "id": 5,
-    "phone": "567-890-1234",
-    "name": "Eve Lee",
-    "bill": 89.65,
-    "date": "2024-03-21"
-  },
-  {
-    "id": 6,
-    "phone": "123-456-7890",
-    "name": "John Doe",
-    "bill": 315.20,
-    "date": "2024-03-20"
-  },
-  {
-    "id": 7,
-    "phone": "234-567-8901",
-    "name": "Jane Smith",
-    "bill": 72.80,
-    "date": "2024-03-19"
-  },
-  {
-    "id": 8,
-    "phone": "345-678-9012",
-    "name": "Alice Johnson",
-    "bill": 180.00,
-    "date": "2024-03-18"
-  },
-  {
-    "id": 9,
-    "phone": "456-789-0123",
-    "name": "Bob Brown",
-    "bill": 99.99,
-    "date": "2024-03-17"
-  },
-  {
-    "id": 10,
-    "phone": "567-890-1234",
-    "name": "Eve Lee",
-    "bill": 123.45,
-    "date": "2024-03-16"
-  }
+    {
+        "id": 1,
+        "phone": "123-456-7890",
+        "name": "John Doe",
+        "bill": 125.75,
+        "date": "2024-03-25"
+    }, {
+        "id": 2,
+        "phone": "234-567-8901",
+        "name": "Jane Smith",
+        "bill": 78.99,
+        "date": "2024-03-24"
+    }, {
+        "id": 3,
+        "phone": "345-678-9012",
+        "name": "Alice Johnson",
+        "bill": 201.45,
+        "date": "2024-03-23"
+    }, {
+        "id": 4,
+        "phone": "456-789-0123",
+        "name": "Bob Brown",
+        "bill": 154.32,
+        "date": "2024-03-22"
+    }, {
+        "id": 5,
+        "phone": "567-890-1234",
+        "name": "Eve Lee",
+        "bill": 89.65,
+        "date": "2024-03-21"
+    }, {
+        "id": 6,
+        "phone": "123-456-7890",
+        "name": "John Doe",
+        "bill": 315.20,
+        "date": "2024-03-20"
+    }, {
+        "id": 7,
+        "phone": "234-567-8901",
+        "name": "Jane Smith",
+        "bill": 72.80,
+        "date": "2024-03-19"
+    }, {
+        "id": 8,
+        "phone": "345-678-9012",
+        "name": "Alice Johnson",
+        "bill": 180.00,
+        "date": "2024-03-18"
+    }, {
+        "id": 9,
+        "phone": "456-789-0123",
+        "name": "Bob Brown",
+        "bill": 99.99,
+        "date": "2024-03-17"
+    }, {
+        "id": 10,
+        "phone": "567-890-1234",
+        "name": "Eve Lee",
+        "bill": 123.45,
+        "date": "2024-03-16"
+    }
 ]
 
+export const customers = [
+    {
+        "id": 1,
+        "name": "John Doe",
+        "phone": "123-456-7890",
+        "email": "johndoe@example.com",
+        "address": "123 Main Street",
+
+    }, {
+        "id": 2,
+        "name": "Jane Smith",
+        "phone": "234-567-8901",
+        "email": "janesmith@example.com",
+        "address": "456 Elm Avenue",
+
+    }, {
+        "id": 3,
+        "name": "Alice Johnson",
+        "phone": "345-678-9012",
+        "email": "alicejohnson@example.com",
+        "address": "789 Oak Boulevard",
+
+    }, {
+        "id": 4,
+        "name": "Bob Brown",
+        "phone": "456-789-0123",
+        "email": "bobbrown@example.com",
+        "address": "1010 Pine Street",
+
+    }, {
+        "id": 5,
+        "name": "Eve Lee",
+        "phone": "567-890-1234",
+        "email": "evelee@example.com",
+        "address": "1111 Maple Drive",
+    }, {
+        "id": 6,
+        "name": "Michael Johnson",
+        "phone": "678-901-2345",
+        "email": "michaeljohnson@example.com",
+        "address": "2222 Cedar Lane",
+
+    }, {
+        "id": 7,
+        "name": "Sara Williams",
+        "phone": "789-012-3456",
+        "email": "sarawilliams@example.com",
+        "address": "3333 Birch Road",
+    }, {
+        "id": 8,
+        "name": "David Clark",
+        "phone": "890-123-4567",
+        "email": "davidclark@example.com",
+        "address": "4444 Walnut Street",
+
+    }, {
+        "id": 9,
+        "name": "Emily Taylor",
+        "phone": "901-234-5678",
+        "email": "emilytaylor@example.com",
+        "address": "5555 Sycamore Avenue",
+        }, {
+        "id": 10,
+        "name": "Ryan Martinez",
+        "phone": "012-345-6789",
+        "email": "ryanmartinez@example.com",
+        "address": "6666 Chestnut Lane",
+    }
+]
+
+export const ordersColumn = [
+    {
+        key: "id",
+        label: "ID"
+    }, {
+        key: "name",
+        label: "NAME"
+    }, {
+        key: "phone",
+        label: "PHONE"
+    }, {
+        key: "date",
+        label: "DATE"
+    }, {
+        key: "bill",
+        label: "BILL"
+    }, {
+        key: "details",
+        label: "DETAILS"
+    }
+];
+
+export const customerColumn = [
+    {
+        key: "id",
+        label: "ID"
+    }, {
+        key: "name",
+        label: "NAME"
+    }, {
+        key: "phone",
+        label: "PHONE"
+    }, {
+        key: "email",
+        label: "Email"
+    }, {
+        key: "address",
+        label: "ADDRESS"
+    }, {
+        key: "details",
+        label: "DETAILS"
+    }
+];

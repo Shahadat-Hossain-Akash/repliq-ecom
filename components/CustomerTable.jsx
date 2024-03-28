@@ -10,7 +10,7 @@ import {
 } from "@nextui-org/react"
 import Link from 'next/link'
 
-export default function Tables({data, columns}) {
+export default function CustomerTable({data, columns}) {
     return (
         <div>
             <Table shadow='none'>
@@ -28,16 +28,16 @@ export default function Tables({data, columns}) {
                                     {item.name}
                                 </TableCell>
                                 <TableCell key={item}>
-                                    {item.bill}
+                                    {item.email}
                                 </TableCell>
                                 <TableCell key={item}>
                                     {item.phone}
                                 </TableCell>
                                 <TableCell key={item}>
-                                    {item.date}
+                                    {item.address}
                                 </TableCell>
                                 <TableCell key={item}>
-                                  <Link href={`/admin/orders/${item.id}`} className='underline flex'>
+                                  <Link href={`/admin/customers/${item.id}`} className='underline flex'>
                                     Details
                                   </Link>
                                 </TableCell>
