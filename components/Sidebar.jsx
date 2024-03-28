@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 
 export default function Sidebar() {
-    const list = ['orders', 'customers', 'products']
+    const list = ['orders', 'customers',]
     return (
         <aside
         className={`text-black min-h-screen bg-zinc-100/50 rounded-2xl hidden md:block`}>

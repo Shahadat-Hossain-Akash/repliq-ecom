@@ -1,7 +1,8 @@
+import CustomerDetail from '@/components/CustomerDetail'
 import React from 'react'
 
-export default function CustomerDetailsPage() {
+export default function CustomerDetailsPage({params}) {
   return (
-    <div>CustomerDetails</div>
+    <CustomerDetail id={params.id}/>
   )
 }
