@@ -6,3 +6,5 @@ export default function CustomerPage() {
     <Customer/>
   )
 }
+
+export const revalidate = 0
