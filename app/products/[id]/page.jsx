@@ -1,6 +1,7 @@
 import ProductDetails from '@/components/ProductDetails'
 import React from 'react'
 import data from '@/data/data'
+import Header from '@/components/Header'
 
 export default function ProductDetailsPage({params}) {
     const product = data
@@ -9,5 +10,6 @@ export default function ProductDetailsPage({params}) {
             (item) => item.id == params
                 ?.id
         )
-    return (<ProductDetails data={product}/>)
+    return (<> < Header /> <ProductDetails data={product}/>
+</>)
 }
